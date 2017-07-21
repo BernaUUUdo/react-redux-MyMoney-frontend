@@ -1,5 +1,5 @@
 {
-  "name": "frontend",
+  "name": "My Money App",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -35,7 +35,8 @@
 
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack-dev-server --progress --color --inline --hot",
+    "production": "webpack --progress -p"
   },
   "repository": {
     "type": "git",
