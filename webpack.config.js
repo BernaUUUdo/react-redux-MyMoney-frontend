@@ -36,12 +36,12 @@ module.exports = {
                 exclude: /node_modules/,
                 query: {
                     presets: ['es2015', 'react'],
-                    plugin: ['transform-object-rest-spread']
+                    plugins: ['transform-object-rest-spread']
                 }
             },
             {
                 test: /\.css$/,
-                loader: ExtracttextPlugin.extract('style-laoder','css-loader')
+                loader: ExtracttextPlugin.extract('style-loader','css-loader')
             },{
                 test: /\.woff|.woff2|.ttf|.eot|.svg|.png|.jpg*.*$/,
                 loader: 'file'
